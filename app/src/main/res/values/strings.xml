@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ViraTest</string>
+    <string name="img_games_des">img_games_des</string>
+    <string name="movie_name_text">MovieName</string>
+    <string name="img_movie_des">img_movie_des</string>
+    <string name="img_description_des">img_description_des</string>
+    <string name="img_genre_des">img_genre_des</string>
 </resources>
