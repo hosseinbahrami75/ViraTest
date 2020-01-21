@@ -11,6 +11,18 @@
     <color name="GrayNew">#F7F7F7</color>
     <color name="blueNew">#00AFFF</color>
 
+
+    <color name="paleLavender">#ebeaef</color>
+    <color name="waterBlue">#1492e6</color>
+    <color name="waterBlueDisable">#401492E6</color>
+    <color name="paleGray">#fafafc</color>
+    <color name="greenBlue">#04c370</color>
+    <color name="charcoalGray">#31313c</color>
+    <color name="pumpkinOrange">#ff8801</color>
+    <color name="blueGray">#9090a7</color>
+    <color name="coral">#ff3b3b</color>
+    <color name="darkBackground">#1c1c27</color>
+
     <color name="Flat_Orange">#f39c12</color>
     <color name="Flat_Orange2">#e7920a</color>
     <color name="Flat_Emerald">#2ecc71</color>

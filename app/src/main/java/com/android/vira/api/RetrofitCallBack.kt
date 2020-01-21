@@ -15,7 +15,6 @@ object RetrofitCallBack {
     fun <T> callRetrofit(call: Call<T>, loading: View?, retrofitObject: RetrofitObject<T>) {
         //Show Loading if Exists
         if (loading != null) loading.visibility = View.VISIBLE
-
         //Call Api With Generic CallBack
         call.enqueue(object : Callback<T> {
             override fun onResponse(call: Call<T>, response: Response<T>) {

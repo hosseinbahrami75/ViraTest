@@ -10,7 +10,7 @@ import com.android.vira.api.models.response.GameBean
  *  Created by HosseinBahrami at 1/19/2020
  */
 
-@Database(entities = [GameBean::class], version = 1)
+@Database(entities = [GameBean::class], version = 1, exportSchema = false)
 abstract class AppDatabase: RoomDatabase() {
 
     abstract fun gameListDao(): GameListDao
