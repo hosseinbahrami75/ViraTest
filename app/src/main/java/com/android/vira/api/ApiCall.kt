@@ -16,6 +16,6 @@ interface ApiCall {
 
 
     //Get GameDetails
-    @GET("bjyoa")
+    @GET("1bjyoa")
     fun getGameDetails(): Call<GameBean>
 }

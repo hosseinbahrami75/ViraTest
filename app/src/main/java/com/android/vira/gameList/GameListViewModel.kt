@@ -28,7 +28,6 @@ class GameListViewModel : ViewModel() {
                 object : RetrofitObject<List<GameBean>> {
                     override fun onSuccess(body: List<GameBean>) {
                         gamesData.value = body
-                        GameListRepository.data.addAll(body)
                         if (AppDatabase.getInstance(context).gameListDao().getGameList().isNullOrEmpty()) {
                             AppDatabase.getInstance(context).gameListDao().insertAllGames(body)
                         }

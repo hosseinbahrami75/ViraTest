@@ -16,4 +16,6 @@ data class GameBean(
     @Embedded val genre: GenreBean,
     @ColumnInfo(name = "image") val image: String,
     @ColumnInfo(name = "video") val video: String
-)
+) {
+    constructor() : this(0,"","","",0,GenreBean(), "","")
+}

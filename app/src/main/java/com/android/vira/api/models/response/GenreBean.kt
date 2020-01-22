@@ -9,4 +9,6 @@ data class GenreBean(
     val genreName: String,
     @SerializedName("image")
     val genreImage: String
-)
+) {
+    constructor() : this(0, "", "")
+}

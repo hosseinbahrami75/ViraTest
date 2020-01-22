@@ -4,24 +4,29 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.android.vira.adapters.callBacks.GameClickCallBack
 import com.android.vira.api.models.response.GameBean
 import com.android.vira.databinding.ItemGamesBinding
+import org.greenrobot.eventbus.EventBus
 
 /**
  *  Created by HosseinBahrami at 1/19/2020
  */
 
-class GameListAdapter(private val context: Context, private var games: List<GameBean>) :
+class GameListAdapter(private var games: List<GameBean>) :
     RecyclerView.Adapter<GameListAdapter.GamesViewHolder>() {
     init {
         setHasStableIds(true)
     }
 
-    inner class GamesViewHolder(private val binding: ItemGamesBinding) : RecyclerView.ViewHolder(binding.root) {
+    inner class GamesViewHolder(
+        private val binding: ItemGamesBinding
+    ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: GameBean) {
             binding.data = item
             binding.rate.rating = item.rate.toFloat()
             binding.playersCount.text = item.playerCount.toString()
+            binding.game.setOnClickListener { EventBus.getDefault().post(item) }
         }
     }
 
